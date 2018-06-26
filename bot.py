@@ -20,7 +20,6 @@ async def on_message(message):
         return
     else:
         response = str(bot.get_response(quest))
-       if float(response.confidence) > 0.5:
         await client.send_message(message.channel, "" + response)
 
 client.run('NDYxMDQ3NDI4MjMwMTUyMTky.DhNnbA.GL-JH3oU9uOnyLMCMltAdPrJ3BY')	
